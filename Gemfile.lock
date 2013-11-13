@@ -1,0 +1,75 @@
+GIT
+  remote: git://github.com/adammck/ruby-icloud.git
+  revision: d5a69f3a1e5613d6a3740a6195b86ad38e0e53e4
+  specs:
+    icloud (0.0.1)
+      json_pure
+      uuidtools
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.1.0)
+    colorize (0.6.0)
+    gmail (0.4.0)
+      gmail_xoauth (>= 0.3.0)
+      mail (>= 2.2.1)
+      mime (>= 0.1)
+    gmail_xoauth (0.4.1)
+      oauth (>= 0.3.6)
+    handsoap (1.4.0)
+    httparty (0.12.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    httpclient (2.3.4.1)
+    icalendar (1.4.4)
+    json (1.8.1)
+    json_pure (1.8.1)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime (0.1)
+    mime-types (1.25)
+    mini_portile (0.5.2)
+    multi_xml (0.5.5)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    nokogiri (1.6.0-x86-mingw32)
+      mini_portile (~> 0.5.0)
+    oauth (0.4.7)
+    ox (2.0.11)
+    polyglot (0.3.3)
+    recursive-open-struct (0.4.5)
+    rubyntlm (0.4.0)
+    ssl_certifier (0.1.5)
+    thor (0.18.1)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
+    uuidtools (2.1.4)
+    viewpoint (0.1.27)
+      handsoap
+      httpclient
+      icalendar (>= 1.1.5)
+      mail (>= 2.2.5)
+      nokogiri
+      rubyntlm
+
+PLATFORMS
+  ruby
+  x86-mingw32
+
+DEPENDENCIES
+  awesome_print
+  colorize
+  gmail
+  httparty
+  icloud!
+  json
+  nokogiri
+  ox
+  recursive-open-struct
+  ssl_certifier
+  thor
+  uuidtools
+  viewpoint

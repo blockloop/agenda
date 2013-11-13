@@ -1,0 +1,24 @@
+# Delete anything you don't want to use
+
+# You want the private XML url. See https://support.google.com/calendar/answer/37648?hl=en
+# e.g. https://www.google.com/calendar/feeds/USERNAME%40gmail.com/private-00000000000000000000000000000000/basic
+gcal_url:
+
+icloud:
+  email: YOU@ICLOUD.com
+  password: *******
+
+# This is used to send an email to yourself
+gmail:
+  email: YOU@gmail.com
+  password: *******
+
+exchange:
+  username: YOU@YOURPLACE.NET
+  password: *******
+  endpoint: https://YOURSERVER.NET/ews/exchange.asmx
+
+# HELP: https://pushover.net/apps/build
+pushover:
+  token: AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  user: BBBBBBBBBBBBBBBBBBBBBBBBBBBB
