@@ -4,11 +4,15 @@ I have a terrible memory and I hate fragmentation. I like to wake up and know wh
 
 ## Usage
 
-```bash
-git clone https://github.com/brettof86/agenda.git
+```shell
+cd /opt/ # or wherever you want
+git clone git@github.com:brettof86/agenda.git
 cd agenda
-chmod +x agenda.rb
-ln -s /usr/local/bin/agenda agenda.rb
+cp config.example.yaml config.yaml
+vim config.yaml #put your info in this file
+bundle install
+chmod +x agenda
+sudo ln -s /opt/agenda/agenda /usr/local/bin/agenda
 agenda help
 ```
 
