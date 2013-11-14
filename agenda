@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
-bundle exec ruby agenda.rb "$@"
+SCRIPT_DIR=$(dirname "$(readlink -f $0)")
+
+bundle exec ruby "$SCRIPT_DIR/agenda.rb" "$@"
