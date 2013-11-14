@@ -10,7 +10,7 @@ module Bmjones
 			Viewpoint::EWS::EWS.endpoint = CONFIG.exchange.endpoint
 			Viewpoint::EWS::EWS.set_auth CONFIG.exchange.username, CONFIG.exchange.password
 			Viewpoint::EWS::CalendarFolder.find_folders.flat_map{ |folder|
-				folder.items_between(date-1, date)
+				folder.items_between(date, date+1)
 			}.map{ |item|
 				result = OpenStruct.new
 				result.title = item.subject
