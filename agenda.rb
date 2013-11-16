@@ -19,6 +19,11 @@ module Bmjones
 
 		desc 'print', 'Pretty prints the agenda for the day given (default today)'
 		def print
+			if events.none?
+				puts "No events for #{options[:date]}"
+				exit 0
+			end
+
 			require 'awesome_print'
 			events.each do |item|
 				ap item.marshal_dump
@@ -27,6 +32,11 @@ module Bmjones
 
 		desc 'pushover', 'Sends the formatted data to pushover'
 		def pushover
+			if events.none?
+				puts "No events for #{options[:date]}"
+				exit 0
+			end
+
 			require "net/https"
 			formatted_message = events.map.with_index do |item,index|
 				msg = "#{index+1}. #{item.title}"
@@ -51,6 +61,10 @@ module Bmjones
 
 		desc "gmail", "Sends the formatted data to Gmail"
 		def gmail
+			if events.none?
+				puts "No events for #{options[:date]}"
+				exit 0
+			end
 			require 'gmail'
 
 			formatted_message = events.map do |item|
